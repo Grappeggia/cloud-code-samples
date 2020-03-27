@@ -23,7 +23,7 @@ This sample is structured the way we recommend structuring an applications in Cl
 **`kubernetes-manifests/`** folder contains pod specification for the application nodes:
 * <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-frontend.deployment.yaml">guestbook-frontend.deployment.yaml</walkthrough-editor-open-file> - frontend node spec
 * <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-backend.deployment.yaml">guestbook-backend.deployment.yaml</walkthrough-editor-open-file> - backend node spec
-* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-backend.deployment.yaml">guestbook-backend.deployment.yaml</walkthrough-editor-open-file> - database node spec
+* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-mongodb.deployment.yaml">guestbook-mongodb.deployment.yaml</walkthrough-editor-open-file> - database node spec
 
 **`src/`** folder contains pod specification for the application nodes:
 
