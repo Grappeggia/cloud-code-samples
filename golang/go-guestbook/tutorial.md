@@ -11,7 +11,7 @@ Kubernetes and Docker. The application consists of a web front end, a backend, a
 
 Before we begin, let's open the IDE workspace to focus on the Go Guestbook sample applicationL
 
-* Navigate to **File/Open Workspace...**
+* Navigate to the <walkthrough-editor-spotlight spotlightId="fileMenu">File</walkthrough-editor-spotlight> menu and select **Open Workspace...**
 * Select **`cloudshell_open/cloud-code-samples/golang/go-guestbook`**
 * Click **Open**
 
