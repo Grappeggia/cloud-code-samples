@@ -9,7 +9,6 @@
       "watch": true,
       "cleanUp": true,
       "portForward": true,
-      "imageRegistry": "gcr.io/maratb-sandbox"
    },
    {
       "name": "Debug on Kubernetes (frontend)",
