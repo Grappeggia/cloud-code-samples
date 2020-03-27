@@ -12,7 +12,7 @@ Kubernetes and Docker. The application consists of a web front end, a backend, a
 Before we begin, let's open the IDE workspace to focus on the Go Guestbook sample applicationL
 
 * Navigate to **File/Open Workspace...**
-* Select **`cloud-code-samples/golang/go-guestbook`**
+* Select **`cloudshell_open/cloud-code-samples/golang/go-guestbook`**
 * Click **Open**
 
 
@@ -21,24 +21,24 @@ Before we begin, let's open the IDE workspace to focus on the Go Guestbook sampl
 This sample is structured the way we recommend structuring an applications in Cloud Code.
 
 **`kubernetes-manifests/`** folder contains pod specification for the application nodes:
-* <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-frontend.deployment.yaml">guestbook-frontend.deployment.yaml</walkthrough-editor-open-file> - frontend node spec
-* <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-backend.deployment.yaml">guestbook-backend.deployment.yaml</walkthrough-editor-open-file> - backend node spec
-* <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-backend.deployment.yaml">guestbook-backend.deployment.yaml</walkthrough-editor-open-file> - database node spec
+* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-frontend.deployment.yaml">guestbook-frontend.deployment.yaml</walkthrough-editor-open-file> - frontend node spec
+* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-backend.deployment.yaml">guestbook-backend.deployment.yaml</walkthrough-editor-open-file> - backend node spec
+* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/kubernetes-manifests/guestbook-backend.deployment.yaml">guestbook-backend.deployment.yaml</walkthrough-editor-open-file> - database node spec
 
 **`src/`** folder contains pod specification for the application nodes:
 
-* frontend/ contains web server logic (<walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/src/frontend/main.go">main.go</walkthrough-editor-open-file>)
-and the accompanying <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/src/frontend/Dockerfile">Dockerfile</walkthrough-editor-open-file> 
-* backend/ contains API server logic (<walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/src/backend/main.go">main.go</walkthrough-editor-open-file>)
-and the accompanying <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/src/backend/Dockerfile">Dockerfile</walkthrough-editor-open-file> 
+* frontend/ contains web server logic (<walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/src/frontend/main.go">main.go</walkthrough-editor-open-file>)
+and the accompanying <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/src/frontend/Dockerfile">Dockerfile</walkthrough-editor-open-file> 
+* backend/ contains API server logic (<walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/src/backend/main.go">main.go</walkthrough-editor-open-file>)
+and the accompanying <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/src/backend/Dockerfile">Dockerfile</walkthrough-editor-open-file> 
 
 ### Configuration files ###
 
-* <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/skaffold.yaml">skaffold.yaml</walkthrough-editor-open-file> is the config file for Skaffold, which is used by Cloud Code to build and run images
-* <walkthrough-editor-open-file filePath="cloud-code-samples/golang/go-guestbook/.vscode/launch.json">.vscode/launch.json</walkthrough-editor-open-file> contains application configuration for Cloud Code
-  * <walkthrough-editor-select-line filePath="cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="4" endLine="12" startCharacterOffset="0" endCharacterOffset="0">run on Kubernetes</walkthrough-editor-select-line>
-  * <walkthrough-editor-select-line filePath="cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="14" endLine="25" startCharacterOffset="0" endCharacterOffset="0">debug frontend on Kubernetes</walkthrough-editor-select-line>
-  * <walkthrough-editor-select-line filePath="cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="27" endLine="38" startCharacterOffset="0" endCharacterOffset="0">debug backend on Kubernetes</walkthrough-editor-select-line>
+* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/skaffold.yaml">skaffold.yaml</walkthrough-editor-open-file> is the config file for Skaffold, which is used by Cloud Code to build and run images
+* <walkthrough-editor-open-file filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/.vscode/launch.json">.vscode/launch.json</walkthrough-editor-open-file> contains application configuration for Cloud Code
+  * <walkthrough-editor-select-line filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="4" endLine="12" startCharacterOffset="0" endCharacterOffset="0">run on Kubernetes</walkthrough-editor-select-line>
+  * <walkthrough-editor-select-line filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="14" endLine="25" startCharacterOffset="0" endCharacterOffset="0">debug frontend on Kubernetes</walkthrough-editor-select-line>
+  * <walkthrough-editor-select-line filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="27" endLine="38" startCharacterOffset="0" endCharacterOffset="0">debug backend on Kubernetes</walkthrough-editor-select-line>
 
 ## Running Go Guestbook Application ##
 
