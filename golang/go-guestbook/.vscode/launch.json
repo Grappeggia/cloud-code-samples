@@ -1,16 +1,17 @@
 {
   "version": "0.2.0",
   "configurations": [
-    {
+   {
       "name": "Run on Kubernetes",
       "type": "cloudcode.kubernetes",
       "request": "launch",
       "skaffoldConfig": "${workspaceFolder}/skaffold.yaml",
       "watch": true,
       "cleanUp": true,
-      "portForward": true
-    },
-    {
+      "portForward": true,
+      "imageRegistry": "gcr.io/maratb-sandbox"
+   },
+   {
       "name": "Debug on Kubernetes (frontend)",
       "type": "cloudcode.kubernetes",
       "request": "attach",
@@ -19,11 +20,11 @@
       "localRoot": "${workspaceFolder}/src/frontend",
       "remoteRoot": "/src/frontend",
       "podSelector": {
-        "app": "guestbook",
-        "tier": "frontend"
+         "app": "guestbook",
+         "tier": "frontend"
       }
-    },
-    {
+   },
+   {
       "name": "Debug on Kubernetes (backend)",
       "type": "cloudcode.kubernetes",
       "request": "attach",
@@ -32,9 +33,9 @@
       "localRoot": "${workspaceFolder}/src/backend",
       "remoteRoot": "/src/backend",
       "podSelector": {
-        "app": "guestbook",
-        "tier": "backend"
+         "app": "guestbook",
+         "tier": "backend"
       }
-    }
-  ]
+   }
+]
 }
