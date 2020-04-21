@@ -40,6 +40,14 @@ and the accompanying <walkthrough-editor-open-file filePath="cloudshell_open/clo
   * <walkthrough-editor-select-line filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="14" endLine="25" startCharacterOffset="0" endCharacterOffset="0">debug frontend on Kubernetes</walkthrough-editor-select-line>
   * <walkthrough-editor-select-line filePath="cloudshell_open/cloud-code-samples/golang/go-guestbook/.vscode/launch.json" startLine="27" endLine="38" startCharacterOffset="0" endCharacterOffset="0">debug backend on Kubernetes</walkthrough-editor-select-line>
 
+## Creating a Google Kubernetes Engine cluster ##
+
+To create a GKE cluster where you can run your guestbook application, follow these steps
+* Navigate to the Google Kubernetes Engine explorer using the Cloud Code view, by clicking its <walkthrough-editor-spotlight spotlightId="fileMenu">icon in the left activity bar</walkthrough-editor-spotlight>
+* Click the '+' button to create a new GKE cluster
+* Fill out fields in the Create Cluster wizard and click 'Create Cluster'.
+
+
 ## Running Go Guestbook Application ##
 
 To run your application, you'll need the Cloud Code: Run on Kubernetes command.
@@ -48,3 +56,18 @@ To run your application, you'll need the Cloud Code: Run on Kubernetes command.
 * Confirm whether you'd like to use the current cluster context to run the app in (or switch to a preferred one).
 * Depending on the context chosen, you may be prompted to choose an image registry to push the images to. This choice is stored in in your launch configuration (found in .vscode/launch.json)
 * Cloud Code then builds your containers, pushes them to the registry, applies Kubernetes configurations to the cluster, and returns the IP address you can use to browse your live application.
+
+## Viewing Logs ##
+
+To help with troubleshooting problems with your app, you can see the logs from your running pods using the Log Viewer that comes integrated with Cloud Shell. To view logs, follow these steps:
+* Launch the Log Viewer by typing **Cloud Code: View Logs** using the Command Pallete (accessible with **Ctrl/Cmd+Shift+P**)
+* Search for the running app, in this case 'go-guestbook', to view logs from using the deployment field in the Log Viewer search box.
+
+## Conclusion
+
+<walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
+
+Congratulations! You've just created and run your first Kubernetes app on GKE.
+
+<walkthrough-inline-feedback></walkthrough-inline-feedback>
+
